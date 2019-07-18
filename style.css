@@ -1,0 +1,211 @@
+/*Selector universal*/
+*{ 
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+.header-and-menu-container{
+border: solid 2px red;
+display:flex;
+justify-content: space-between;
+font-family: 'icomoon';
+
+} 
+h2{
+  font-family: 'icomoon';
+}
+.header{
+    border: solid 2px green;
+  /*   display:flex; */
+    }
+
+.navbar{
+    border: solid 2px purple;
+  /*   display: flex; */
+}    
+
+.menu{
+    border: solid 2px blue;
+}    
+
+.hero{
+    border: solid 2px peru;
+    background-image: url("taxi.jpg"); 
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /*Sets the width and height of the background image in percent of the parent element. 
+    The first value sets the width, the second value sets the height.*/
+    position: relative;
+    /*width: 100vw; */ /*Porcentaje relativo a la anchura del viewport.*/
+    height:100vh ; /*Porcentaje relativo a la altura del viewport.*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}   
+/* .hero div{
+    justify-content: right;
+    align-items: center;
+}  */   
+.travel{
+    border: solid 2px  purple;
+    background-color: #f7b617;
+    text-align: left;
+    /* max-width:200px;
+    width: 50%; */
+    position: absolute; 
+    width: 75vw;
+    height: 40vh;
+    /* background-position: center; */
+    /* top: 50%;
+    left: 20%; */
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    padding: 10px;
+    /* right: 0;
+    top: 50%; */
+} 
+.information{
+    border: solid 2px fuchsia;
+    background-color: #f7b617;
+    color:white;
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}  
+
+
+
+
+.info-div{
+    width: 90vw ;
+    border: solid 1px white;
+    margin:20px;
+    padding :20px;
+}
+
+.info-h2{
+  padding: 20px;
+}
+.info-p{
+  padding-bottom: 30px;
+}
+.celular{
+  width:70vw;
+}
+.driver{
+    border: solid 2px brown;
+    color:white;
+    background-image: url('conduce.jpg'); /*Establece una imagen como fondo para el div con clase driver*/
+    background-repeat: no-repeat;/*Establece No repetir la imagen*/
+    /* background-size: cover; */
+    width: 100vw;/*Porcentaje relativo a la anchura del viewport para el div*/
+    height:50vh ; /*Porcentaje relativo a la altura del viewport para el div.*/
+    background-size: 100% 100%;  /*Sets the width and height of the background image in percent of the parent element. 
+    The first value sets the width, the second value sets the height. porcentaje relativo al padre en este caso al div con clase driver*/
+    position: relative;
+}    
+/* .conduce{
+  width: 100%;
+  height: 100%;
+} */
+#button-driver{
+  background-color: #f7b617;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  padding:10px;
+}
+.rates{
+    border: solid 2px goldenrod;
+    background-color: #f7b617;
+    color:white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}    
+#button-rates{
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding:10px 25px;
+  font-weight: bold;
+  margin: 20px;
+}
+.container-inputs{
+  display:flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-inputs > div{
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+} 
+.input{
+  border-radius:5px;
+  border: solid 1px white;
+  background-color: #f7b617;
+  width: 75vw;
+  padding:10px;
+  margin: 10px;
+}
+.input::placeholder {
+  color:white;
+}
+.footer{
+    border: solid 2px indigo;
+    background-color:  #2b2b2b ;
+    color: white;
+
+}    
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?lwlfc0');
+  src:  url('../fonts/icomoon.eot?lwlfc0#iefix') format('embedded-opentype'),
+   url('../fonts/icomoon.ttf?lwlfc0') format('truetype'),
+   url('../fonts/icomoon.woff?lwlfc0') format('woff'),
+   url('../fonts/icomoon.svg?lwlfc0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}  
+ /*  [class^="icon-"], [class*=" icon-"] {
+   /*  use !important to prevent issues with browser extensions that change fonts */
+   /*  font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+   */ 
+    /* Better Font Rendering =========== */
+   /*  -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  } 
+  
+  .icon-play3:before {
+    content: "\ea1c";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  .icon-twitter:before {
+    content: "\ea96";
+  }
+  .icon-appleinc:before {
+    content: "\eabe";
+  }
+  .icon-linkedin2:before {
+    content: "\eaca";
+  } */
+
+    
+
+
