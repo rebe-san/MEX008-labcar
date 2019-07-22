@@ -68,9 +68,6 @@ body{
   background: white;
   color:black;
 }
-
- 
-
 #menu >li{
   padding: 20px;
 }
@@ -143,10 +140,10 @@ body{
   height: 85%;
   width: 80%;
 }
-.celular{
+/* .celular{
   height: 90%;
   width: 90%;
-}
+} */
 .info-h2{
   display:flex;
   justify-content: center;
@@ -270,7 +267,6 @@ margin: 0.5rem;
   font-weight: bold;
   font-style: italic;
 }
-
 @font-face {
   font-family: 'DejaVu Serif';
   src: url('DejaVuSerif-BoldItalic-webfont.eot');
@@ -359,7 +355,96 @@ margin: 0.5rem;
   content: "\eaca";
 }
 
+
+
 /*********************************Media queries para mobile****************************/
+
+@media screen and (width: 320px)  {
+  #desktop-view{
+    display: none;
+  }
+  #mobile-view{
+    display: contents;
+  }
+  #navigation >label{
+    font-size: 2.5em;
+  }
+  #header >img{
+    width: 40%;
+    height:25% ;
+  }
+  #menu{
+    font-size: 1.5em;
+ }
+ .travel{
+  padding:3em;
+ }
+ .travel>h2{
+  font-size: 3em;
+}
+.travel>h2>img{
+  height: 25px;
+}
+ #download-button{
+  font-size: 1.5em;
+}
+/* #header > img {
+  width: 30%;
+  height: 20%;
+} */
+/*  .travel > h2 > img{
+    height:60px; 
+ 
+ } */
+ .info-h2{
+   font-size:3em;
+} 
+.info-p{
+  font-size:2em;
+}
+.info-p-div{
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+.celular{
+  height: 90%;
+  width: 90%;
+}
+#button-driver {
+  padding: 0.5em;
+  margin: 0.5em;
+  font-size: 2em;
+}
+.driver-text>p{
+  font-size: 1.8em;
+  padding:16px;
+}
+.driver-text >h3 {
+ font-size: 2em;
+ padding: 2rem 1rem 0rem 1rem;
+}
+.rates>div>p, .rates>div>h2{
+  font-size: 2em;
+  padding: 0.5em;/*Medida con respecto al fontsize*/
+}
+.input {
+  border-radius: 5px;
+  width: 75vw;
+  padding: 1em;
+  margin: 1em;
+  font-size: 1.8em;
+}
+#button-rates {
+  font-size: 1.5em;
+}
+.footer{
+  font-size: 1.6em;
+}
+.footer-info > div>div>p {
+  margin: 0.5rem;
+}
+}
 @media screen and (min-width: 321px )and (max-width: 479px) {
   #desktop-view{
     display: none;
@@ -386,8 +471,7 @@ margin: 0.5rem;
 .travel>h2>img{
   height: 25px;
 }
-
-#download-button{
+ #download-button{
   font-size: 2em;
 }
 /* #header > img {
@@ -409,7 +493,10 @@ margin: 0.5rem;
   display: flex;
   align-items: center;
 }
-
+.celular{
+  height: 90%;
+  width: 90%;
+}
 #button-driver {
   padding: 0.5em;
   margin: 0.5em;
@@ -488,7 +575,10 @@ margin: 0.5rem;
   font-size:2em;
   padding:16px;
 }
-
+.celular{
+  height: 90%;
+  width: 90%;
+}
 #button-driver {
   padding: 0.5em;
   margin: 0.5em;
@@ -564,7 +654,10 @@ margin: 0.5rem;
   display: flex;
   align-items: center;
 }
-
+.celular{
+  height: 90%;
+  width: 90%;
+}
 #button-driver {
   padding: 0.5em;
   margin: 0.5em;
@@ -655,7 +748,7 @@ margin: 0.5rem;
   text-align: left;
   position: absolute; 
   width: 35vw;
-  height: 65vh;
+  height: 100%;
   color: white;
   display: flex;
   justify-content: center;
@@ -705,54 +798,54 @@ margin: 0.5rem;
 .information-desk{ 
   background-color: #f7b617;
   color:white;
-  text-align: center;
+  /* text-align: center; */
   
   height: 100vh;
   display:flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
  
 }
 .info{
   border: solid 1px white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80vw;
+  height: 80vh;
+  padding: 20px;
   
 }  
+.info>div{
+  display: flex;
+  align-items: center;
+}
 .info-p-desk{
 font-weight: bold; 
 display:flex;
 align-items: center;
 }
-.info-p-div-desk{
-height: 19%;
-display: flex;
-align-items: center;
+.info-div-desk>p{
+   font-size: 17px;
+   margin:10px;
 }
-.info-div{
-  width: 90vw ;
-  height: 75vh;
-  border: solid 1px white;
-  margin: 2.5rem 1.25rem  0rem 1.25rem ;
+.info-div-desk{
   display:flex;
- /* justify-content: center; */
+ justify-content: center;
   flex-direction: column; 
-  align-items: center;
-}
-.info-div>h2{
-  height: 15%; 
-}
-.info-div>div{  
-height: 85%;
-width: 80%;
-}
+ 
+} 
+
 .celular{
-height: 90%;
-width: 90%;
+height: 80%;
+
 }
-.info-h2{
+.info-h2-desk{
 display:flex;
-justify-content: center;
+/* justify-content: center; */
 align-items: center;
+font-size: 25px;
+margin:10px;
 }
 .driver-desk{
  display:flex;
@@ -919,16 +1012,4 @@ color:white;
    font-size: 1.3em;
  
 }
-}  
-
- 
-  /* .hero div{
-      justify-content: right;
-      align-items: center;
-  }  */   
- 
-  
- 
- 
-
-
+} 
