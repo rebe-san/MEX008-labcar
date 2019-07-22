@@ -1,0 +1,19 @@
+#navigation >label{
+    height:100% ;/**/
+    font-size: 10px;
+    color:gray;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    cursor: pointer;
+  }
+
+  #navigation >label{
+    font-size: 3em;
+  }
+
+
+  #navigation >label{
+    font-size: 2em;
+  }
