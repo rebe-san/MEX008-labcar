@@ -73,7 +73,7 @@ body{
 }
 .hero{
     
-    background-image: url("taxi.jpg"); 
+    background-image: url("./img/taxi.jpg"); 
     background-repeat: no-repeat;
     background-size: 100% 100%; /*Sets the width and height of the background image in percent of the parent element. 
     The first value sets the width, the second value sets the height.*/
@@ -152,7 +152,7 @@ body{
 
 .driver::before {
   content: ' ';   
-  background-image: url('conduce.jpg'); /*Establece una imagen como fondo para el div con clase driver*/
+  background-image: url('./img/conduce.jpg'); /*Establece una imagen como fondo para el div con clase driver*/
   background-repeat: no-repeat;/*Establece No repetir la imagen*/
   width: 100vw;/*Porcentaje relativo a la anchura del viewport para el div*/
   height:50vh ; /*Porcentaje relativo a la altura del viewport para el div.*/
@@ -739,7 +739,7 @@ margin: 0.5rem;
 
   }
  .hero-desk{  
-    background-image: url("taxi.jpg"); 
+    background-image: url("./img/taxi.jpg"); 
     background-repeat: no-repeat;
     background-size: 100% 100%; /*Sets the width and height of the background image in percent of the parent element. 
     The first value sets the width, the second value sets the height.*/
@@ -861,7 +861,7 @@ margin:10px;
 }
 .driver-desk::before {
   content: ' ';   
-  background-image: url('conduce.jpg'); /*Establece una imagen como fondo para el div con clase driver*/
+  background-image: url('./img/conduce.jpg'); /*Establece una imagen como fondo para el div con clase driver*/
   background-repeat: no-repeat;/*Establece No repetir la imagen*/
   width: 100vw;/*Porcentaje relativo a la anchura del viewport para el div*/
   height:100vh ; /*Porcentaje relativo a la altura del viewport para el div.*/
@@ -1027,4 +1027,136 @@ color:white;
 .fas{
   font-size: 15px;
 }
+/* Icono de user */
+.fa-user-circle{
+  font-size: 13em;
+}
+
 } 
+
+/*************Modales*************/
+/* The Modal (background) */
+.container {
+  display: flex; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Sit on top */
+  position: fixed; /* Stay in place */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+}
+
+
+ /* .login-modal-content { 
+  display : flex;
+  justify-content: center;
+  flex-direction: column; 
+  align-items: center; 
+  width: 80%; /* Full width */
+  /* height: 95%; Full height
+  background-color: rgb(41, 172, 172)  */
+
+ /*}  */
+
+.login-modal-content {
+  width: 70%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: 1fr;
+  flex-direction: column;
+  background-color: rgb(86, 206, 206);
+  margin: 0 auto;
+  position: absolute;
+  border-radius: 5px;
+  z-index: 2;
+  padding: 2rem;
+  opacity: 1;
+  color: white;
+  text-align: center;
+}
+.login-modal-content >p{
+  font-size: 0.8rem;
+}
+.username, .password{
+  height:auto;
+}
+.username > input, .password>input {
+      height: 2.5em;
+}
+.register-modal-content, .driver-modal-content{
+
+    width: 70%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    flex-direction: column;
+    background-color: rgba(148, 148, 148, 0.99);
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 5px;
+    z-index: 2;
+    padding: 2rem;
+    opacity: 1;
+    color: white;
+    text-align: center;
+}
+
+.register-modal-content>input{
+   margin:0.4em;
+}
+.register-modal-content>p{
+  margin:0.4em;
+  font-size: 1.3em;
+  color:black
+}
+
+
+.driver-modal-content>p{
+
+ font-size: 1.7em;
+ color:black
+}
+
+#p-1, #p-2{
+  font-size: 1.3em;
+}
+/* Boton ENVIAR */
+.button-send{
+  background-color: rgba(95, 182, 253, 0.822);
+  color: white;
+  border: none;
+  margin:0.4em;
+}
+
+.button-account{
+  background-color: black;
+  color:wheat;
+  border: none;
+  margin:0.4em;
+}
+.dissapear{
+  display:none;
+}
+.field-name>input{
+  height: 90%;
+  width: 49%;
+}
+span{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.button-entry{
+  background-color: #f7b617;
+  color:white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  width: 10em;
+  height: 3em;
+}
+#register{
+  font-weight: bold;   
+  color:black;
+}
