@@ -271,7 +271,9 @@ margin: 0.5rem;
   font-family: 'DejaVu Serif';
   src: url('DejaVuSerif-BoldItalic-webfont.eot');
   src: local('DejaVu Serif Bold Italic'), url('DejaVuSerif-BoldItalic-webfont.woff') format('woff'), url('DejaVuSerif-BoldItalic-webfont.ttf') format('truetype'), url('DejaVuSerif-BoldItalic-webfont.svg#webfontQAewh7pf') format('svg');
-  font-weight: bold;
+  font-weight: bold;  "parserOptions": {
+    "ecmaVersion": 2019
+  },
   font-style: italic;
 } */
  /*  [class^="icon-"], [class*=" icon-"] {
@@ -304,7 +306,7 @@ margin: 0.5rem;
   .icon-linkedin2:before {
     content: "\eaca";
   } */
-
+/* /* 
     
   @font-face {
     font-family: 'icomoon';
@@ -320,26 +322,26 @@ margin: 0.5rem;
   
   [class^="icon-"], [class*=" icon-"] {
     /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
+    /* font-family: 'icomoon' !important; */
    /*  speak: none; */
-    font-style: normal;
+    /* font-style: normal;
     font-weight: normal;
     font-variant: normal;
     text-transform: none;
-    line-height: 1;
+    line-height: 1; */
   
     
     /* Better Font Rendering =========== */
     /* -webkit-font-smoothing: antialiased; */
    /*  -moz-osx-font-smoothing: grayscale; */
-  }
+  /* }  */
 
   .info-p-div{
     height: 19%;
     display: flex;
     align-items: center;
   }
-.icon-play3::before {
+/* .icon-play3::before {
   content: "\ea1c";
 }
 .icon-facebook:before {
@@ -354,7 +356,7 @@ margin: 0.5rem;
 .icon-linkedin2:before {
   content: "\eaca";
 }
-
+ */
 
 
 /*********************************Media queries para mobile****************************/
@@ -445,6 +447,7 @@ margin: 0.5rem;
   margin: 0.5rem;
 }
 }
+/**********************************Media-Queri***************************************/
 @media screen and (min-width: 321px )and (max-width: 479px) {
   #desktop-view{
     display: none;
@@ -531,6 +534,8 @@ margin: 0.5rem;
   margin: 0.5rem;
 }
 }
+
+/**********************************Media-Queri***************************************/
 @media screen and (min-width: 480px )and (max-width:599px) {
   #desktop-view{
     display: none;
@@ -614,7 +619,7 @@ margin: 0.5rem;
    margin: 0.5rem;
  }
 }
-
+/******************************Media Queri****************************************/
 @media screen and (min-width: 600px )and (max-width:699px) {
   #desktop-view{
     display: none;
@@ -692,8 +697,11 @@ margin: 0.5rem;
 .footer-info > div>div>p {
   margin: 0.5rem;
 }
+
+
+
 }
-/*****************************************************************************************************/
+/**************************************Media-Queri*******************************************************/
 @media (min-width: 700px) /* and (max-width: 1200px) */ { 
   #desktop-view{
     display: contents;
@@ -990,10 +998,11 @@ color:white;
   display: flex;
   align-items: flex-end;
   margin:1em;
+  font-size: 15px;
 }
 .second-section>p, .three-section>p{
   margin:1em;
-  font-size: 1.3em;
+  font-size: 1.4em
 }
 .four-section{
   display: flex;
@@ -1002,7 +1011,7 @@ color:white;
   flex-direction: column-reverse;
 }
 .four-section>img{
-  width: 50%;
+  width: 60%;
   margin: 1.5em;
 }
 .footer-desk>p{
@@ -1011,5 +1020,11 @@ color:white;
    margin:2em;
    font-size: 1.3em;
  
+}
+.fab, .fas{
+  margin: 4px;
+}
+.fas{
+  font-size: 15px;
 }
 } 
